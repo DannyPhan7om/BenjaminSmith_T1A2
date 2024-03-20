@@ -16,6 +16,8 @@
 
 body {
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     letter-spacing: .2rem;
@@ -27,7 +29,10 @@ body {
     background-color: var(--curious-blue-900);
     color: var(--curious-blue-900);
     background-image:url(img/Website_Background.png);
+    background-size: 200%;
     background-blend-mode: overlay;
+    font-family: clarendon LT;
+    overflow: scroll;
 
 }
 
@@ -38,7 +43,7 @@ header {
     box-sizing: border-box;
     height: 15dvh;
     width: 100%;
-    /* background-color: var(--curious-blue-200); */
+    /* background-color: var(--curious-blue-900); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,26 +123,38 @@ main {
     height: 80dvh;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: var(--curious-blue-50);
+    text-shadow: 1px 4px var(--curious-blue-900);
+    padding: 0 1em;
+    
 }
 
 main > .indexheading {
     font-size: 4rem;
-    color: var(--curious-blue-50);
-    text-shadow: 1px 4px var(--curious-blue-900);
+
+
 }
 
 main > .indeximage {
     width: 60%;
     padding: 1%;
     border: var(--curious-blue-50) 2px solid;
-    border-radius: 12px;
+    border-radius: 50%;
+    
 }
 
-main > .indextext {
-    color: var(--curious-blue-50);
+main > a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    transition: 0.5s;
+    transform: scale(1);
+}
+
+main > a:hover {
+    transform: scale(1.5);
 }
 
 /* ------------
