@@ -11,11 +11,13 @@
     --curious-blue-800: #0d5e7f;
     --curious-blue-900: #114e69;
     --curious-blue-950: #0b3146;
-  }
 
+  }
 
 body {
     box-sizing: border-box;
+    font-family: "Truculenta", sans-serif;
+    font-weight: 400;
     width: 100%;
     min-height: 100dvh;
     margin: 0;
@@ -39,24 +41,41 @@ HEADER SETTINGS
 --------------*/
 header {
     box-sizing: border-box;
+    /* background-image: url(img/Header.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position:center; */
     height: 10dvh;
     width: 100%;
-    /* background-color: var(--curious-blue-950); */
+    background-color: var(--curious-blue-900);
+    background-blend-mode: color-burn;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1em;
-    border-bottom: var(--curious-blue-50) 1px solid;
+    border-bottom: #d5af26 2px solid;
     margin-bottom: auto;
 }
-/* 
-header > nav > h1 {
+
+
+header > img {
     box-sizing: border-box;
+    padding: 0 1em;
+    max-width: 5em;
+    max-height: 5em;
+}
+
+header > h1 {
+    padding: 0 1em;
+    width: 15em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
     color: var(--curious-blue-50);
     font-weight:bolder;
-    font-size: 2rem;
-    text-shadow: 0 2px var(--curious-blue-900);
-} */
+    font-size: 1.5rem;
+    /* text-shadow: 0px 1px 1px #d5af26; */
+}
 
 
 nav {
@@ -68,7 +87,7 @@ nav {
 header > nav {
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     /* border: 1px solid black; */
     padding: 0;
@@ -83,8 +102,8 @@ header > nav > a {
     padding: 8px 2%;
     margin: 0 1%;
     position: relative;
-    color: var(--curious-blue-900);
-    background-color: var(--curious-blue-100);
+    color: var(--curious-blue-50);
+    background-color: var(--curious-blue-900);
     transition: 0.5s;
     text-decoration: none;
 }
@@ -92,8 +111,8 @@ header > nav > a {
 header > nav > a::before {
     box-sizing: border-box;
     content: '';
-    border-top: 2px solid var(--curious-blue-100);
-    border-bottom: 2px solid var(--curious-blue-100);
+    border-top: 1.5px solid #d5af26;
+    border-bottom: 1.5px solid #d5af26;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -152,18 +171,19 @@ main > .indeximage {
 
 main > .indexlink {
     text-decoration: none;
-    color: var(--curious-blue-900);
+    color: var(--curious-blue-50);
     font-weight: 400;
-    transform: scale(1);
     transition: 0.5s;
     font-weight: bolder;
     bottom: 0;
-    background-color: var(--curious-blue-100);
-    /* border-radius: 8px; */
+    border-top: 1.5px solid #d5af26;
+    border-bottom: 1.5px solid #d5af26;
+    border-radius: 0;
 }
 
 main > .indexlink:hover {
-    transform: scale(1.2);
+    border-radius: 12px;
+    transform: scale(1.1);
 }
 
 /* ------------
@@ -274,7 +294,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: var(--curious-blue-50) 1px solid;
+    border-top: #d5af26 2px solid;
     color: var(--curious-blue-50);
     flex-direction: row;
     padding: 0 2em;
