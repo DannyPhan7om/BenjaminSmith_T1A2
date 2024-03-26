@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dcb377f8f2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <nav>
-            <!-- <h1>Navigation</h1> -->
+
+        <nav class="navleft">
+        <img src="img/Logo1.png" alt="Logo">
+        <h1>Benjamin Smith</h1>
+        </nav>
+        <input type="checkbox" class="navbutton" id="navbutton">
+        <label for = "navbutton">
+            <i class="fas fa-bars" style="color: #d5af26;"></i>
+            </label>
+        <nav class="navright">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
@@ -19,33 +32,42 @@
         </nav>
     </header>
 
-    <main>
-        <form class="contact">
 
+    <main>
+        <form class="contact" action="https://formsubmit.co/15460@coderacademy.edu.au" method="POST">
+            <h2>Send an Inquiry</h2>
         <section class="names">
             <section class="fname">
                 <label for "fname">First Name</label>
-                <input type="text" id="fname" name="fname" placeholder="John">
+                <input type="text" id="fname" name="First Name" placeholder="John">
             </section>
             <section class="lname">
                 <label for "lname">Last Name</label>
-                <input type="text" id="lname" name="lname" placeholder="Smith">
+                <input type="text" id="lname" name="Last Nmae" placeholder="Smith">
             </section>
         </section>
-
         <section class="contactmethods">
             <section class="email">
                 <label for "email">Email Address</label>
-                <input type="text" id="email" name="email" placeholder="xyz@gmail.com">
+                <input type="text" id="email" name="Email Address" placeholder="xyz@gmail.com">
             </section>
             <section class="phone">
-                <label for "lname">Contact Number</label>
-                <input type="text" id="phone" name="phone" placeholder="XXXX XXX XXX">
+                <label for "phone">Contact Number</label>
+                <input type="text" id="phone" name="Phone Number" placeholder="XXXX XXX XXX">
+            </section>
+            <section class="message">
+                <label for "message">Message</label>
+                <input type="text" id="message" name="Message" placeholder="How can I help?">
             </section>
 
         </section>
-
+        <button type="submit"> Submit</button>
         </form>
+
+        <div class="contactbuttons">
+        <a href="0402652213" class="contactbutton"><i class= " fa fa-phone"> Give me a call</i> </a>
+        <a href="mailto:15460@coderacademy.edu.au" class="contactbutton"><i class= " fa fa-envelope"> Send me an email</i> </a>
+        </div>
 
     </main>
 
