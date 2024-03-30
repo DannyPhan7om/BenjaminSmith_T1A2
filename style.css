@@ -65,13 +65,14 @@ header > .navleft {
     align-items: center;
 }
 
-header > .navleft > img {
+header > .navleft > a > img {
     padding: .5em 1em;
-    max-height: 10dvh;
+    height: 8dvh;
 }
 
 header > .navleft > h1 {
     padding: 0 1em;
+    width: max-content;
     display: flex;
     color: var(--curious-blue-50);
     font-weight:bolder;
@@ -107,23 +108,25 @@ header > .navright > a {
     transition: 0.5s;
     text-decoration: none;
     max-height: 10dvh;
+    z-index: 1;
 }
 
 header > .navright > a::before {
     content: '';
-    border-top: 1.5px solid #d5af26;
-    border-bottom: 1.5px solid #d5af26;
-    width: 100%;
-    height: 100%;
+    border-left: 2px solid #d5af26;
+    border-right: 2px solid #d5af26;
+    width: 0%;
+    height: 2.5em;
+    background-color: var(--curious-blue-950);
     position: absolute;
     left: 0;
     top: 0;
-    transform: scaleY(1.4);
     transition: 0.5s;
+    z-index: -1;
 }
 
 header > .navright > a:hover:before {
-    transform: scaleY(1);
+    width: 100%;
 }
 
 header > .navright > a:hover {
@@ -148,10 +151,26 @@ main {
 HOME SETTINGS - SORTED
 --------------*/
 .indexmain > .section1 > img {
-    margin: 1em auto;
-    max-width: 80%;
-    filter: invert(100%);
+    margin: 1em 1em;
+    max-width: 25em;
     z-index: 0;
+    border-radius: 12px;
+    box-shadow: 5px 5px #d5af26;
+}
+
+.indexmain > .section1 {
+    margin: 1em;
+}
+.indexmain > .section2 {
+    margin: 1em
+}
+
+.indexmain > .section2 > h2 {
+    margin: 1em;
+}
+
+.indexmain > .section2 > h3 {
+    margin: 1em;
 }
 
 /* Link settings for homepage and resume */
@@ -180,6 +199,7 @@ ABOUT PAGE SETTINGS - SORTED
 .aboutmain > section > p {
 
     width: 80%;
+    font-size: 1.2rem;
     text-align: center;
     letter-spacing: normal;
     background-color:var(--curious-blue-900);
@@ -258,6 +278,19 @@ ABOUT PAGE SETTINGS - SORTED
 /* ------------
 CONTACT PAGE SETTINGS 
 --------------*/
+
+.contactmain {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contactmain > .section2 > .contactbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .contactform {
     display: flex;
@@ -346,17 +379,15 @@ PROJECTS & BLOG HOMEPAGE PAGE SETTINGS
 }
 
 .tile > section > h1 {
-    border-left: 2px dotted var(--curious-blue-100);
-    border-right: 2px dotted var(--curious-blue-100);
-
+    border-left: 4px solid #d5af26;
+    border-right: 4px solid #d5af26;
+    font-size: 2rem;
 }
 
 .tile > section > img {
     width: 100%;
-    filter: grayscale(100);
     margin-top: 0;
     min-width: 300px;
-
 }
 .tile:hover {
     scale: 1.2;
@@ -422,10 +453,7 @@ INDIVIDUAL PROJECTS AND BLOG PAGE SETTINGS
     margin: 1em;
     width: 40dvw;
     max-width: 400px;
-    box-shadow: 5px 5px #d5af26;
-    border-radius: 12px;
-    border-bottom: 2px solid var(--curious-blue-950);
-    border-right: 2px solid var(--curious-blue-950);
+    padding: 1em;
 }
 
 .projectpostmain > .section2 > .knownlanguages > ul > h2 {
@@ -450,7 +478,6 @@ footer {
     flex-direction: row;
     padding: 0 2em;
     margin-top: auto;
-    
 
 }
 
@@ -560,6 +587,16 @@ footer >h4 {
         display: none;
     }
 
+    .contactmain {
+        flex-direction: row;
+    }
+
+    .contactmain > .section2 > .contactbuttons {
+        flex-direction: column;
+    }
+    .contactmain > .section2 > .contactbuttons > a {
+        font-size: 1rem;
+    }
     .projectsmain, .blogmain {
         display: flex;
         justify-content: center;
@@ -568,12 +605,10 @@ footer >h4 {
         flex-wrap: wrap;
         margin: 0 2em;
         background-color: var(--curious-blue-900);
-        perspective: 2000px;
     }
 
     .tile {
         margin: 1em;
-        width: 20em;
         height: fit-content;
         flex-wrap: wrap;
     }
@@ -605,44 +640,3 @@ footer >h4 {
     }
 }
 
-
-
-/* @media screen and (max-height: 600px) {
-
-    header > .navright > a {
-        list-style: none;
-        border: 1px solid var(--curious-blue-900);
-        padding: 8px 2%;
-        margin: 0 1%;
-        position: relative;
-        color: var(--curious-blue-50);
-        background-color: var(--curious-blue-900);
-        transition: 0.5s;
-        text-decoration: none;
-        z-index: 1;
-    }
-
-    header > .navright > a::before {
-        border-left: 2px solid var(--curious-blue-100);
-        border-right: 2px solid var(--curious-blue-100);
-        border-top: none;
-        border-bottom: none;
-        background-color: var(--curious-blue-950);
-        width: 0%;
-        height: 100%;
-        position: absolute;
-        transform: scaleY(.8);
-        transition: 0.5s;
-        z-index: 0;
-    }
-    
-    header > .navright > a:hover:before {
-        transform: scaleY(.8);
-        width: 100%;
-    }
-    
-    header > .navright > a:hover {
-        background-color: var(900);
-        color: var(--curious-blue-50);
-        background-color: var(--curious-blue-900);
-    } */
