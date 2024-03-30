@@ -7,7 +7,6 @@ https://dannyphan7om.github.io/BenjaminSmith_T1A2/
 https://github.com/DannyPhan7om/BenjaminSmith_T1A2
 
 ## Description of your portfolio website, including,
-
 ### Purpose
 ### Functionality / features
 ### Screenshots
@@ -41,3 +40,6 @@ https://github.com/DannyPhan7om/BenjaminSmith_T1A2
 * HTML
 * CSS
 * Github Deployment
+
+
+https://vimeo.com/929047177?share=copy
