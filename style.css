@@ -390,7 +390,7 @@ PROJECTS & BLOG HOMEPAGE PAGE SETTINGS
     min-width: 300px;
 }
 .tile:hover {
-    scale: 1.2;
+    scale: 1.1;
     z-index: 1;
 }
 
@@ -602,6 +602,7 @@ footer >h4 {
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        overflow-x: scroll;
         flex-wrap: wrap;
         margin: 0 2em;
         background-color: var(--curious-blue-900);
