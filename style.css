@@ -297,7 +297,7 @@ CONTACT PAGE SETTINGS
 .contactform {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 1em auto;
     border-radius: 12px;
     background-color: var(--curious-blue-900);
 }
