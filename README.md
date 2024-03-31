@@ -6,6 +6,9 @@ https://dannyphan7om.github.io/BenjaminSmith_T1A2/
 ## GitHub repo
 https://github.com/DannyPhan7om/BenjaminSmith_T1A2
 
+## Link to Video Presentation
+https://vimeo.com/929047177?share=copy
+
 ## Description of your portfolio website
 
 
@@ -63,6 +66,5 @@ My target audience for this site include potential clients who need websites bui
 * Github Deployment
 
 
-https://vimeo.com/929047177?share=copy
 
 
