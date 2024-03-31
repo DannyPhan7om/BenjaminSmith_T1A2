@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,79 +9,87 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dcb377f8f2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
 
+<body>
+    <!-- same navbar across all pages -->
     <header>
 
         <nav class="navleft">
             <a href="index.html"><img src="img/logo1.png" alt="Logo"></a>
-        <h1>CONTACT ME</h1>
+            <h1>CONTACT ME</h1>
         </nav>
         <input type="checkbox" class="navbutton" id="navbutton">
-        <label for = "navbutton">
+        <label for="navbutton">
             <i class="fas fa-bars" style="color: #d5af26;"></i>
-            </label>
+        </label>
         <nav class="navright">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="projects.html">Projects</a>
-                <a href="blog.html">Blog</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
         </nav>
     </header>
 
-
+    <!-- I've chosen to add classes to all of my main sections ie "contactmain" by doing this I can use the one stylesheet for my project and nest the subsections -->
     <main class="contactmain">
 
+        <!-- I created this form and placed it in one sections so I could independently move it accross my site with ease -->
         <section class="section1">
 
             <form class="contactform" action="https://formsubmit.co/15460@coderacademy.edu.au" method="POST">
                 <h1 style="color: #d5af26; font-size: 2rem;"> SEND AN INQUIRY </h1>
 
                 <!-- <section class="fname"> -->
-                    <label for "fname">First Name</label>
-                    <input type="text" id="fname" name="First Name" placeholder="John">
+                <label for "fname">First Name</label>
+                <input type="text" id="fname" name="First Name" placeholder="John">
                 <!-- </section> -->
 
                 <!-- <section class="lname"> -->
-                    <label for "lname">Last Name</label>
-                    <input type="text" id="lname" name="Last Nmae" placeholder="Smith">
+                <label for "lname">Last Name</label>
+                <input type="text" id="lname" name="Last Nmae" placeholder="Smith">
                 <!-- </section> -->
-            
+
                 <!-- <section class="email"> -->
-                    <label for "email">Email Address</label>
-                    <input type="text" id="email" name="Email Address" placeholder="xyz@gmail.com">
+                <label for "email">Email Address</label>
+                <input type="text" id="email" name="Email Address" placeholder="xyz@gmail.com">
                 <!-- </section> -->
                 <!-- <section class="phone"> -->
-                    <label for "phone">Contact Number</label>
-                    <input type="text" id="phone" name="Phone Number" placeholder="XXXX XXX XXX">
+                <label for "phone">Contact Number</label>
+                <input type="text" id="phone" name="Phone Number" placeholder="XXXX XXX XXX">
                 <!-- </section> -->
                 <!-- <section class="message"> -->
-                    <label for "message">Message</label>
-                    <input type="text" id="message" name="Message" placeholder="How can I help?">
+                <label for "message">Message</label>
+                <input type="text" id="message" name="Message" placeholder="How can I help?">
                 <!-- </section> -->
 
                 <button type="submit"> Submit</button>
             </form>
         </section>
+
+        <!-- This section includes the phone and email links and I created it seperate so on desktop I could have it next to the contact form -->
         <section class="section2">
-        <div class="contactbuttons">
-        <a href="tel:0402652213" class="contactbutton"><i class= " fa fa-phone"> Give me a call</i> <br>0402 652 213</a>
-        <a href="mailto:15460@coderacademy.edu.au" class="contactbutton"><i class= " fa fa-envelope"> Send me an email</i><br>15460@coderacademy.edu.au </a>
-        </div>
+            <div class="contactbuttons">
+                <a href="tel:0402652213" class="contactbutton"><i class=" fa fa-phone"> Give me a call</i> <br>0402 652
+                    213</a>
+                <a href="mailto:15460@coderacademy.edu.au" class="contactbutton"><i class=" fa fa-envelope"> Send me an
+                        email</i><br>15460@coderacademy.edu.au </a>
+            </div>
         </section>
     </main>
 
     <Footer>
-        <a href="https://github.com/DannyPhan7om"<i class="fa-brands fa-github"></i></a>
-        <a href="https://au.linkedin.com"<i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/DannyPhan7om" <i class="fa-brands fa-github"></i></a>
+        <a href="https://au.linkedin.com" <i class="fa-brands fa-linkedin"></i></a>
         <h4>&copy Built by Benjamin & Icons by FontAwesome</h4>
-        <a href="https://www.instagram.com"<i class="fa-brands fa-instagram"></i></a>
-        <a href="https://vimeo.com/"<i class="fa-brands fa-vimeo"></i></a>
+        <a href="https://www.instagram.com" <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://vimeo.com/" <i class="fa-brands fa-vimeo"></i></a>
     </Footer>
-    
+
 </body>
+
 </html>

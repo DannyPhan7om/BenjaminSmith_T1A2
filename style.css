@@ -18,7 +18,7 @@
     }
 
   }
-
+/* Main body elements across all pages */
 body {
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@ body {
 }
 
 /* ------------
-HEADER SETTINGS - SORTED
+HEADER SETTINGS
 --------------*/
 header {
     padding: 1em;
@@ -58,7 +58,7 @@ header {
     background-color: var(--curious-blue-900);
   
 }
-
+/* lefthand side of navbar */
 header > .navleft {
     display: flex;
     justify-content: left;
@@ -86,7 +86,7 @@ header > .navbutton {
 header > label {
     display: none;
 }
-
+/* righthand side of navbar */
 header > .navright {
     display: flex;
     justify-content: right;
@@ -110,7 +110,7 @@ header > .navright > a {
     max-height: 10dvh;
     z-index: 1;
 }
-
+/* navbar animation */
 header > .navright > a::before {
     content: '';
     border-left: 2px solid #d5af26;
@@ -148,7 +148,7 @@ main {
 }
 
 /* ------------
-HOME SETTINGS - SORTED
+HOME SETTINGS 
 --------------*/
 .indexmain > .section1 > img {
     margin: 1em 1em;
@@ -193,7 +193,7 @@ HOME SETTINGS - SORTED
 }
 
 /* ------------
-ABOUT PAGE SETTINGS - SORTED
+ABOUT PAGE SETTINGS
 --------------*/
 
 .aboutmain > section > p {
@@ -242,7 +242,8 @@ ABOUT PAGE SETTINGS - SORTED
     padding-left: 0;
     width: fit-content;
 }
-/* If something goes wrong put this back in the media query */
+
+/* settings for each section on about page */
 .aboutmain > .section1  {
     display: flex;
     justify-content: center;
@@ -291,7 +292,7 @@ CONTACT PAGE SETTINGS
     align-items: center;
     flex-wrap: wrap;
 }
-
+/* settings for the contact form */
 .contactform {
     display: flex;
     flex-direction: column;
@@ -314,7 +315,7 @@ input:hover {
 ::placeholder {
     text-align: center;
 }
-
+/* settings for the animation of the submit button */
 .contactform > button {
     display: flex;
     padding: 1em 1em;
@@ -330,7 +331,7 @@ input:hover {
     background-color: #d5af26;
     color: var(--curious-blue-50);
 }
-
+/* settings for the email and phone links*/
 .contactbuttons {
     display: flex;
     flex-direction: row;
@@ -354,7 +355,7 @@ input:hover {
 /* ------------
 PROJECTS & BLOG HOMEPAGE PAGE SETTINGS 
 --------------*/
-
+/* this controls the overall aesthetic of the tiles on the blog and projects page */
 .tile {
     padding: 1em 3em;
     display: flex;
@@ -389,6 +390,8 @@ PROJECTS & BLOG HOMEPAGE PAGE SETTINGS
     margin-top: 0;
     min-width: 300px;
 }
+
+/* controls the scale up animation on the tile */
 .tile:hover {
     scale: 1.1;
     z-index: 1;
@@ -456,6 +459,7 @@ INDIVIDUAL PROJECTS AND BLOG PAGE SETTINGS
     padding: 1em;
 }
 
+/* This controls the heading on the languages used section of the projects page */
 .projectpostmain > .section2 > .knownlanguages > ul > h2 {
     color: #d5af26;
 }
@@ -481,6 +485,7 @@ footer {
 
 }
 
+/* controls the links in the footer including animations */
 footer > a {
     color: var(--curious-blue-50);
     max-height: 5dvh;
@@ -500,9 +505,10 @@ footer >h4 {
     font-size: .8rem;
 }
 
-
+/* for screensizes under 720px in width ie mobiles, the following will allow a responsive design */
 @media screen and (max-width: 720px) {
     
+    /* settings to turn the navigation bar into a collapsable version */
     header > .navright {
         flex-direction: column;
         position: absolute;
@@ -517,7 +523,7 @@ footer >h4 {
         z-index: 1;
         
     }
-
+/* this allows the text to be hidden when the height is set to 0 above */
     header > .navright > a {
         padding: 0;
         border: none;
@@ -527,12 +533,12 @@ footer >h4 {
         overflow: hidden ;
         transition: 0s;
     }
-
+/* controls the animation of the nav colouration */
     header > .navright > a:hover {
         background-color: transparent;
         color: #d5af26;
     }
-
+/* allows the navar to expand when checked */
     .navbutton:checked ~ .navright {
         height:16em;
         border-bottom: 3px solid #d5af26;
@@ -546,6 +552,7 @@ footer >h4 {
         width: fit-content;
     }
 
+    /* settings that control the navbar icon and the opcacity */
     header > label {
         display: block;
         transform: scale(2);
@@ -559,7 +566,7 @@ footer >h4 {
 
 }
     
-
+/* settings for screensizes about 720px */
 @media screen and (min-width: 720px) {
 
     .indexmain {
